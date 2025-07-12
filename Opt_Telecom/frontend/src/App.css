@@ -1,0 +1,132 @@
+/* frontend/src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+div {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; /* Limita el ancho del contenido */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: calc(100% - 20px); /* Ajusta para padding */
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button.delete-button { /* Puedes usar una clase para el botón de eliminar */
+  background-color: #dc3545;
+}
+
+button.delete-button:hover {
+  background-color: #c82333;
+}
